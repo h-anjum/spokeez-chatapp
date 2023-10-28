@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
+import '../widgets/auth_form.dart';
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
+class AuthScreen extends StatefulWidget {
+  const AuthScreen({super.key});
 
   @override
+  State<AuthScreen> createState() => _AuthScreenState();
+}
+
+class _AuthScreenState extends State<AuthScreen> {
+  @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: Theme.of(context).primaryColor,
+      body: AuthForm(),
+    );
   }
 }
