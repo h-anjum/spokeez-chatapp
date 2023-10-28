@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "71264089557",
+    "project_id": "spokeez-chat",
+    "storage_bucket": "spokeez-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71264089557:android:b2bca64417985f1569795c",
+        "android_client_info": {
+          "package_name": "com.example.spokeez"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVNAOYbiCzq3fzeDSzxCyCtXSCKMEmq2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
