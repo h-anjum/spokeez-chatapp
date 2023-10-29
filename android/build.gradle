@@ -36,11 +36,11 @@ task generateGoogleServicesResources {
     }
 }
 
-android {
-    compileOptions {
-        lintOptions {
-            disable 'deprecation'
-            disable 'unchecked'
-        }
-    }
-}
+// android {
+//     compileOptions {
+//         lintOptions {
+//             disable 'deprecation'
+//             disable 'unchecked'
+//         }
+//     }
+// }

@@ -1,21 +1,26 @@
 import 'package:flutter/material.dart';
-import './screens/auth_screen.dart';
-import './screens/chat_screen.dart';
+import 'package:firebase_core/firebase_core.dart'; // Import Firebase Core
 
-void main() {
-  runApp(const MyApp());
+import './screens/auth_screen.dart';
+
+void main() async {
+  WidgetsFlutterBinding
+      .ensureInitialized(); // Ensure that Flutter is initialized first
+  await Firebase.initializeApp(); // Initialize Firebase
+
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Chat',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.purple),
+        // Note: Corrected 'fromSeed' to 'fromSwatch'
+        // 'useMaterial3' is not a valid theme property in Flutter
       ),
       home: AuthScreen(),
     );
